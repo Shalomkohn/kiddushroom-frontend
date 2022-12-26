@@ -1,0 +1,82 @@
+.main-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.featured-article {
+    height: 400px;
+    width: 530px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 100px auto;
+}
+
+.featured-article .heading {
+    padding: 15px;
+    background-color: rgba(0,0,0, .35);
+}
+
+.featured-article .heading .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+.featured-article .heading .author {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+}
+
+.featured-article button {
+    background-color: rgba(0,0,0, .35);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 15px;
+    font-size: 16px;
+}
+
+.featured-article button a{
+    padding: 15px 15px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured-article button a svg {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 670px) {
+    .main-section .container {
+        margin: 0 auto;
+    }
+    
+    .featured-article {
+        height: 260px;
+        width: 350px;
+        margin: 50px auto;
+    }
+    
+    .featured-article .heading {
+        padding: 15px;
+        background-color: rgba(0,0,0, .35);
+    }
+    
+    .featured-article .heading .title {
+        font-size: 20px;
+    }
+    
+    .featured-article .heading .author {
+        font-size: 14px;
+    }
+}

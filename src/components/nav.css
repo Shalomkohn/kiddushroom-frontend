@@ -1,0 +1,128 @@
+nav {
+    background: rgb(115,253,234);
+    background: linear-gradient(90deg, rgba(115,253,234,1) 0%, rgba(185,253,228,1) 67%, rgba(245,253,223,1) 100%);
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 40px;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    padding: 10px 100px;
+}
+
+.nav-bar .container svg {
+    display: none;
+    font-size: 25px;
+}
+
+.nav-bar .container .nav-ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    z-index: 5;
+}
+
+.nav-bar .nav-ul .nav-li{
+    margin-left: 60px;
+}
+
+.nav-bar .nav-ul .nav-li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar .nav-ul .nav-li a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    border-bottom: 2px solid black;
+    width: 0;
+}
+
+.nav-bar .nav-ul .nav-li a:hover::after {
+    width: 100%;
+    transition-duration: 300ms;
+}
+
+.nav-bar .mobile-menu.closed {
+    padding: 0 25px;
+    height: 0px;
+    transition-duration: .3s;
+    overflow: hidden;
+}
+
+.nav-bar .mobile-menu {
+    background-color: rgba(0, 0, 0, .85);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    color: white;
+    padding: 25px;
+}
+
+.nav-bar .mobile-menu div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar .mobile-menu .nav-ul-mobile {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-bar .mobile-menu .nav-ul-mobile li {
+    padding-bottom: 25px;
+}
+
+.nav-bar .mobile-menu .nav-ul-mobile li a{
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1018px) {
+
+    .nav-bar .container .nav-ul {
+        display: none;
+        margin: 0;
+    }
+
+    .nav-bar .container svg {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 670px) {
+
+    .nav-bar .container{
+        padding: 35px 25px 25px;
+    }
+    
+    .logo {
+        font-family: 'Cabin Sketch', cursive;
+        font-size: 30px;
+    }
+    
+    .nav-bar .container .nav-ul {
+        display: none;
+        margin: 0;
+    }
+}

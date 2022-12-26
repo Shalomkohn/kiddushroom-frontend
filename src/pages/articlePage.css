@@ -1,0 +1,117 @@
+.article-container {
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+.article-container .heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.article-container .article-details{
+    display: flex;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5E5E5E;
+    justify-content: center;
+}
+
+.article-container .article-details div {
+    padding: 0 20px;
+}
+
+.article-container .article-details .author {
+    border-right: 1px solid #5E5E5E;
+}
+
+.article-container figure {
+    margin: 0;
+}
+
+.article-container img.thumbnail {
+    margin: 25px 0 75px;
+}
+
+.article-container img{
+    width: 600px;
+    margin-top: 25px;
+}
+
+.article-container figure figcaption {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.article-container .content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.article-container .content h6 {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.article-container .sub-text {
+    font-size: 14px;
+    padding-bottom: 100px;
+    line-height: 1.4;
+    color: #333;
+}
+
+
+@media screen and (max-width: 670px) {
+    .article-container {
+        max-width: 90%;
+        margin: 25px auto;
+    }
+    
+    .article-container .heading {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .article-container img {
+        max-width: 100%;
+    }
+    
+    .article-container .article-details{
+        display: flex;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #5E5E5E;
+        justify-content: center;
+    }
+    
+    .article-container .article-details div {
+        padding: 0 20px;
+    }
+    
+    .article-container .article-details .author {
+        border-right: 1px solid #5E5E5E;
+    }
+    
+    .article-container figure {
+        margin: 25px 0 50px;
+    }
+    
+    .article-container figure figcaption {
+        font-style: italic;
+    }
+    
+    .article-container .content {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+    
+    .article-container .sub-text {
+        font-size: 14px;
+        padding-bottom: 100px;
+    }
+}

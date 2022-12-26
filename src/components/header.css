@@ -1,0 +1,138 @@
+.header {
+   background: rgb(115,253,234);
+   background: linear-gradient(90deg, rgba(115,253,234,1) 0%, rgba(185,253,228,1) 67%, rgba(245,253,223,1) 100%);
+   position: relative;
+   overflow: hidden;
+}
+
+.header .background-images {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    bottom: -50px;
+    right: 120px;
+    z-index: 0;
+}
+
+.header .background-images img {
+    opacity: .1;
+    margin: 10px 0;
+}
+
+.header .hero {
+    z-index: 5;
+}
+
+.header .hero .container {
+    padding: 50px 100px 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .hero .container .cta h1 {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: #000;
+    opacity: 0.7;
+    margin: 0 0 50px 0;
+    max-width: 500px;
+}
+
+.header .hero .container .cta h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    color: white;
+    max-width: 577px;
+    margin: 0 0 60px 0;
+}
+
+.header .hero .container .cta div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0 0 15px 0px;
+}
+
+.header .hero .container .cta form input {
+    border: none;
+    border-radius: 0;
+    width: 260px;
+    padding: 15px 10px;
+    margin-right: 7px;
+    font-size: 16px;
+    border: 1px solid white;
+}
+
+.header .hero .container .cta form button {
+    width: 100px;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: none;
+    background: black;
+    border: 1px solid black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header .hero .container .cta form button:hover {
+    color: black;
+    background-color: transparent;
+    transition-duration: 300ms;
+}
+
+@media screen and (max-width: 670px){
+    .header .background-images {
+        flex-direction: row;
+        align-items: flex-end;
+        bottom: 0;
+        left: -40px;
+        top: unset;
+    }
+
+    .header .background-images img{
+        width: 100px;
+        height: auto;
+        margin: 0 7px;
+    }
+
+    .header .background-images img.book {
+        width: 150px;
+    }
+
+    .header .hero .container {
+        padding: 0 25px 165px;
+    }
+
+    .header .hero .container .cta h1 {
+        font-size: 30px;
+        margin: 0 0 60px 0;
+    }
+    
+    .header .hero .container .cta h2 {
+        font-size: 16px;
+        margin: 0 0 50px 0;
+    }
+    
+    .header .hero .container .cta div{
+        font-size: 18px;
+        margin: 0 0 18px 0px;
+    }
+    
+    .header .hero .container .cta form input {
+        width: 180px;
+        font-size: 16px;
+        padding: 9px 9px;
+        margin-right: 0px;
+        z-index: 5;
+    }
+    
+    .header .hero .container .cta form button {
+        width: 80px;
+        padding: 9px 9px;
+        font-size: 16px;
+    }
+}
+
